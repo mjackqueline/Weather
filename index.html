@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AstroWeather</title>
+    <link rel="icon" type="image/png" href="./assets/moon-solid-white.svg">
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="loading-spinner" id="loading-spinner">
+      <i class="fas fa-spinner fa-spin"></i>
+    </div>
+    <div class="container">
+      <div class="title__container">
+        <h1>AstroWeather</h1>
+      </div>
+      <div class="img__container">
+        <figure class="main__img--wrapper">
+          <img class="main__img hidden__image"src="./assets/undraw_weather_re_qsmd.svg">
+        </figure>
+      </div>
+      <div class="button__container">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="fetchWeather">Get Weather</button>
+      </div>
+      <div id="weatherContainer"></div>
+    </div>
+    <div id="weatherModal" class="modal">
+      <div class="modal-content">
+        <figure class="coffee__container"><img class="coffee" src="./assets/undraw_getting_coffee_re_f2do.svg"></figure>
+        <span class="close-button">&times;</span>
+        <div id="modalWeatherContainer"></div>
+      </div>
+    </div>
+  </body>
+</html>
