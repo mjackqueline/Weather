@@ -35,7 +35,7 @@ document.getElementById('fetchWeather').addEventListener('click', () => {
 });
 
 function getThreeDayForecast(city) {
-  const forecastUrl = `http://api.weatherapi.com/v1/forecast.json?key=bc8c1934794f4ff8ac985719242708&q=${city}&days=3`;
+  const forecastUrl = `https://api.weatherapi.com/v1/forecast.json?key=bc8c1934794f4ff8ac985719242708&q=${city}&days=3`;
   console.log(`Forecast URL: ${forecastUrl}`); // Debugging
 
   showSpinner();
