@@ -27,10 +27,23 @@ function hideSpinner() {
 document.getElementById('fetchWeather').addEventListener('click', () => {
   const city = document.getElementById('cityInput').value;
   if (city) {
-    console.log(`Fetching 3-day forecast and astronomy info for: ${city}`); // Debugging
+    console.log(`Fetching 3-day forecast and astronomy info for: ${city}`);
     getThreeDayForecast(city);
   } else {
     alert('Please enter a city name.');
+  }
+});
+
+document.getElementById('cityInput').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    const city = document.getElementById('cityInput').value;
+    if (city) {
+      console.log(`Fetching 3-day forecast and astronomy info for: ${city}`);
+      getThreeDayForecast(city);
+    } else {
+      alert('Please enter a city name.');
+    }
   }
 });
 

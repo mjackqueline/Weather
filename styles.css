@@ -116,6 +116,10 @@ button:active {
   color: #645154;
 }
 
+#modalWeatherContainer {
+  padding-bottom: 10px;
+}
+
 /* SPINNER */
 
 .loading-spinner {
@@ -185,6 +189,7 @@ button:active {
 
 .coffee {
   width: 50%;
+  padding-top: 10px;
 }
 
 .close-button {
