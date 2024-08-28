@@ -166,7 +166,6 @@ button:active {
 .modal-content {
   background-color: #fff;
   margin: auto;
-  padding: 60px;
   border: none;
   width: 80%;
   max-width: 900px;
@@ -204,3 +203,4 @@ button:active {
   color: #000;
 }
 
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
